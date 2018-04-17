@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ShoppingIndex_Example' do
+  pod 'ShoppingIndex', :path => '../'
+
+  target 'ShoppingIndex_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
