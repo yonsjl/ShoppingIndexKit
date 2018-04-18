@@ -6,17 +6,21 @@
 //  Copyright © 2015年 liangxiechao. All rights reserved.
 //
 
-#import "InitViewController.h"
+#import "ChangeBgColorViewController.h"
 
-@interface InitViewController ()
+@interface ChangeBgColorViewController ()
 
 @end
 
-@implementation InitViewController
+@implementation ChangeBgColorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    if ([_bgColorStr isEqualToString:@"1"]) {
+        self.view.backgroundColor = [UIColor redColor];
+    }else{
+        self.view.backgroundColor = [UIColor yellowColor];
+    }
 }
 
 /*
